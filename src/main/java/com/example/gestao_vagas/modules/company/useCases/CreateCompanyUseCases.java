@@ -20,6 +20,6 @@ public class CreateCompanyUseCases {
                     throw new UserFoundExceptions();
                 });
 
-        this.companyRepository.save(companyEntity);
+        return this.companyRepository.save(companyEntity);
     }
 }
